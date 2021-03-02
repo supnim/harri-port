@@ -1,0 +1,55 @@
+.container {
+  margin: 0 auto;
+  padding: 1rem;
+  flex-basis: 0;
+  flex-grow: 1;
+  align-content: center;
+}
+.content {
+  margin: 4rem;
+  @media only screen and (max-width: 700px) {
+    margin: 1rem;
+  }
+}
+.img {
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  margin: 0;
+  padding: 1rem;
+}
+
+.paragraph {
+  text-align: center;
+  color: #666666;
+}
+
+// alter Orientation
+.side {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  @media only screen and (max-width: 700px) {
+    flex-wrap: wrap;
+  }
+}
+.titleAlt {
+  text-align: left;
+  margin: 0;
+}
+
+.byline {
+  font-size: 1.8rem;
+  color: #4c4c4c;
+}
+
+.paragraphAlt {
+  text-align: left;
+  color: #666666;
+}
+
+.flip {
+  flex-direction: row-reverse;
+}

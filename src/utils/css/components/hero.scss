@@ -1,0 +1,22 @@
+.hero-wrapper {
+  margin: 0 auto;
+}
+
+.hero-image {
+  background-size: cover;
+  background-color: black;
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  color: black;
+  align-items: baseline;
+  justify-content: center;
+  widows: 84vw;
+  margin: 0 14vw;
+}
+//things inside
+.intro * {
+  padding: 1rem;
+}

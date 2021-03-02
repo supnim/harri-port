@@ -1,0 +1,116 @@
+/* Buttons
+/* ---------------------------------------------------------- */
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+  display: inline-block;
+  height: var(--height);
+  padding: 0 2rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-family: var(--font-sans-serif);
+  font-size: 1.6rem;
+  font-weight: var(--font-bold);
+  line-height: var(--height);
+  text-align: center;
+  text-justify: auto;
+  text-decoration: none;
+  white-space: nowrap;
+  appearance: none;
+  transition: 0.4s ease;
+}
+
+input[type="submit"].fit,
+input[type="reset"].fit,
+input[type="button"].fit,
+button.fit,
+.button.fit {
+  width: 100%;
+}
+
+input[type="submit"].small,
+input[type="reset"].small,
+input[type="button"].small,
+button.small,
+.button.small {
+  height: calc(var(--height) * 0.9);
+  line-height: calc(var(--height) * 0.9);
+  padding: 0 1.5rem;
+  font-size: 1.2rem;
+}
+
+input[type="submit"].large,
+input[type="reset"].large,
+input[type="button"].large,
+button.large,
+.button.large {
+  height: calc(var(--height) * 1.14);
+  line-height: calc(var(--height) * 1.14);
+  padding: 0 3rem;
+  font-size: 1.6rem;
+}
+
+input[type="submit"].disabled,
+input[type="submit"]:disabled,
+input[type="reset"].disabled,
+input[type="reset"]:disabled,
+input[type="button"].disabled,
+input[type="button"]:disabled,
+button.disabled,
+button:disabled,
+.button.disabled,
+.button:disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+  color: black;
+  background-color: white;
+  box-shadow: none;
+  border: solid 1px black;
+  border-radius: 2px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+button:hover,
+.button:hover {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  border: solid 1px white;
+  border-radius: 2px;
+  opacity: 1 !important;
+}
+
+input[type="submit"].primary,
+input[type="reset"].primary,
+input[type="button"].primary,
+button.primary,
+.button.primary {
+  color: white;
+  background-color: black;
+  box-shadow: none;
+  border: solid 1px white;
+  border-radius: 2px;
+}
+
+input[type="submit"].primary:hover,
+input[type="reset"].primary:hover,
+input[type="button"].primary:hover,
+button.primary:hover,
+.button.primary:hover {
+  color: black;
+  background-color: white;
+  border: solid 1px black;
+  border-radius: 2px;
+}

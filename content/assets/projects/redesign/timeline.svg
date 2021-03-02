@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1856px" height="1081px" viewBox="0 0 1856 1081" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>timeline</title>
+    <g id="timeline" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(134.000000, 109.000000)">
+            <rect id="Rectangle-Copy-5" fill="#D6D6D6" x="577" y="71" width="1" height="792"></rect>
+            <rect id="Rectangle-Copy-9" fill="#D6D6D6" x="1154" y="71" width="1" height="792"></rect>
+            <rect id="Rectangle-Copy-3" fill="#D6D6D6" x="288" y="71" width="1" height="792"></rect>
+            <rect id="Rectangle-Copy-6" fill="#D6D6D6" x="865" y="71" width="1" height="792"></rect>
+            <rect id="Rectangle-Copy-10" fill="#D6D6D6" x="1443" y="71" width="1" height="792"></rect>
+            <rect id="Rectangle-Copy-2" fill="#D6D6D6" x="144" y="71" width="1" height="792"></rect>
+            <rect id="Rectangle-Copy-7" fill="#D6D6D6" x="721" y="71" width="1" height="792"></rect>
+            <rect id="Rectangle-Copy-11" fill="#D6D6D6" x="1299" y="71" width="1" height="792"></rect>
+            <rect id="Rectangle-Copy-4" fill="#D6D6D6" x="433" y="71" width="1" height="792"></rect>
+            <rect id="Rectangle-Copy-8" fill="#D6D6D6" x="1009" y="71" width="1" height="792"></rect>
+            <rect id="Rectangle" fill="#D6D6D6" x="0" y="71" width="1" height="792"></rect>
+            <rect id="Rectangle-Copy-12" fill="#D6D6D6" x="1587" y="71" width="1" height="792"></rect>
+            <g id="Group-16" transform="translate(9.000000, 308.000000)">
+                <rect id="Rectangle" fill="#FCDAE3" x="0" y="0" width="558" height="57" rx="8"></rect>
+                <text id="Research" font-family="Lato-Bold, Lato" font-size="18" font-weight="bold" letter-spacing="0.15" fill="#BF3458">
+                    <tspan x="22" y="35">Research</tspan>
+                </text>
+                <text id="Competitive-&amp;-User-r" font-family="Lato-Regular, Lato" font-size="16" font-weight="normal" line-spacing="20" letter-spacing="0.133333333" fill="#BF3458">
+                    <tspan x="120" y="34">Competitive &amp; User research</tspan>
+                </text>
+            </g>
+            <g id="Group-14" transform="translate(298.000000, 381.000000)">
+                <rect id="Rectangle-Copy" fill="#FFE2D7" x="0" y="0" width="701" height="57" rx="8"></rect>
+                <text id="UX" font-family="Lato-Bold, Lato" font-size="18" font-weight="bold" letter-spacing="0.15" fill="#CA592C">
+                    <tspan x="22" y="35">UX</tspan>
+                </text>
+                <text id="User-flows-&amp;-wirefra" font-family="Lato-Regular, Lato" font-size="16" font-weight="normal" line-spacing="20" letter-spacing="0.133333333" fill="#CA592C">
+                    <tspan x="72" y="34">User flows &amp; wireframing</tspan>
+                </text>
+            </g>
+            <g id="Group-14-Copy" transform="translate(732.000000, 454.000000)">
+                <rect id="Rectangle-Copy" fill="#F6F9CC" x="0" y="0" width="845" height="57" rx="8"></rect>
+                <text id="UI-Design" font-family="Lato-Bold, Lato" font-size="18" font-weight="bold" letter-spacing="0.15" fill="#7C8500">
+                    <tspan x="22" y="35">UI Design</tspan>
+                </text>
+                <text id="MVP-&amp;-Future-concept" font-family="Lato-Regular, Lato" font-size="16" font-weight="normal" line-spacing="20" letter-spacing="0.133333333" fill="#7C8500">
+                    <tspan x="126" y="34">MVP &amp; Future concepts</tspan>
+                </text>
+            </g>
+            <g id="Group-14-Copy-2" transform="translate(621.000000, 527.000000)">
+                <rect id="Rectangle-Copy" fill="#CCF0F9" x="0" y="0" width="338" height="57" rx="8"></rect>
+                <text id="Content" font-family="Lato-Bold, Lato" font-size="18" font-weight="bold" letter-spacing="0.15" fill="#006C87">
+                    <tspan x="22" y="35">Content</tspan>
+                </text>
+                <text id="Copy" font-family="Lato-Regular, Lato" font-size="16" font-weight="normal" line-spacing="20" letter-spacing="0.133333333" fill="#006C87">
+                    <tspan x="113" y="34">Copy</tspan>
+                </text>
+            </g>
+            <g id="Group-14-Copy-4" transform="translate(1308.000000, 670.000000)">
+                <rect id="Rectangle-Copy" fill="#CCD5DF" x="0" y="0" width="271" height="57" rx="8"></rect>
+                <text id="Sign-off" font-family="Lato-Bold, Lato" font-size="18" font-weight="bold" letter-spacing="0.15" fill="#354158">
+                    <tspan x="22" y="35">Sign off</tspan>
+                </text>
+            </g>
+            <g id="Group-14-Copy-3" transform="translate(1026.000000, 600.000000)">
+                <rect id="Rectangle-Copy" fill="#E0E4FB" x="0" y="0" width="263" height="57" rx="8"></rect>
+                <text id="Testing" font-family="Lato-Bold, Lato" font-size="18" font-weight="bold" letter-spacing="0.15" fill="#3B468D">
+                    <tspan x="22" y="35">Testing</tspan>
+                </text>
+                <text id="MVP-flow" font-family="Lato-Regular, Lato" font-size="16" font-weight="normal" line-spacing="20" letter-spacing="0.133333333" fill="#3B468D">
+                    <tspan x="105" y="34">MVP flow</tspan>
+                </text>
+            </g>
+            <text id="DISCOVERY" font-family="Lato-Bold, Lato" font-size="32" font-weight="bold" letter-spacing="0.2" fill="#666666">
+                <tspan x="134" y="32">DISCOVERY</tspan>
+            </text>
+            <text id="DESIGN" font-family="Lato-Bold, Lato" font-size="32" font-weight="bold" letter-spacing="0.2" fill="#666666">
+                <tspan x="734" y="32">DESIGN</tspan>
+            </text>
+            <text id="DELIVERY" font-family="Lato-Bold, Lato" font-size="32" font-weight="bold" letter-spacing="0.2" fill="#666666">
+                <tspan x="1300" y="32">DELIVERY</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
