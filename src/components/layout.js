@@ -45,7 +45,7 @@ const Layout = (props) => {
 					<div className="site-head-right" role="menu">
 						<ul className="nav" aria-label="menu">
 							<li>
-								<Link to={`/photo`}>art</Link>
+								<Link to={`/`}>art</Link>
 							</li>
 							<li>
 								<Link to={`/video`}>video</Link>
@@ -64,33 +64,6 @@ const Layout = (props) => {
 				<div>{children}</div>
 			</main>
 			<footer className="site-foot">
-				<div className="footer-text">
-					<div className="footer-links">
-						<a href="/amazon">amazon</a>
-						<p>•</p>
-						<a href="/tes">tes</a>
-						<p>•</p>
-						<a href="/bookwise">bookwise</a>
-						<p>•</p>
-						<a href="/design-system">design system</a>
-						<p>•</p>
-						<a href="/knowhere">knowhere</a>
-						<p>•</p>
-						<a href="/one-card">onecard</a>
-						<p>•</p>
-						<a href="/pagebuilder">pagebuilder</a>
-						<p>•</p>
-						<a href="/primefitness">primefitness</a>
-					</div>
-					<div title="using ReactJS">
-						<a></a>
-						&copy; {new Date().getFullYear()} &mdash;{" "}
-						<a style={{ color: "black" }} href="https://github.com/supnim">
-							handmade{" "}
-						</a>{" "}
-						with {" ♥︎ "}
-					</div>
-				</div>
 				<div className="footer-buttons">
 					<div className="actions fit">
 						<a
@@ -110,6 +83,12 @@ const Layout = (props) => {
 							Get in touch
 						</a>
 					</div>
+				</div>
+				<div
+					title="using ReactJS"
+					style={{ color: "black", margin: "2rem", fontSize: "0.8rem" }}
+				>
+					<p>thanks for taking the time to visit, see you soon :) </p>
 				</div>
 			</footer>
 		</div>

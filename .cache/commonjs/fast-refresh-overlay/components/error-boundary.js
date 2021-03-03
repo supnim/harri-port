@@ -32,6 +32,7 @@ class ErrorBoundary extends _react.default.Component {
   render() {
     return this.state.hasError ? null : this.props.children;
   }
+
 }
 
 var _default = ErrorBoundary;

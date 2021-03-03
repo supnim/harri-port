@@ -2,19 +2,10 @@
 
 exports.__esModule = true;
 exports.errorMap = exports.reportError = exports.clearError = void 0;
-const overlayPackage =
-  process.env.GATSBY_HOT_LOADER !== `fast-refresh`
-    ? require(`react-error-overlay`)
-    : require(`@pmmmwh/react-refresh-webpack-plugin/overlay`);
+const overlayPackage = process.env.GATSBY_HOT_LOADER !== `fast-refresh` ? require(`react-error-overlay`) : require(`@pmmmwh/react-refresh-webpack-plugin/overlay`);
 const ErrorOverlay = {
-  showCompileError:
-    process.env.GATSBY_HOT_LOADER !== `fast-refresh`
-      ? overlayPackage.reportBuildError
-      : overlayPackage.showCompileError,
-  clearCompileError:
-    process.env.GATSBY_HOT_LOADER !== `fast-refresh`
-      ? overlayPackage.dismissBuildError
-      : overlayPackage.clearCompileError
+  showCompileError: process.env.GATSBY_HOT_LOADER !== `fast-refresh` ? overlayPackage.reportBuildError : overlayPackage.showCompileError,
+  clearCompileError: process.env.GATSBY_HOT_LOADER !== `fast-refresh` ? overlayPackage.dismissBuildError : overlayPackage.clearCompileError
 };
 
 if (process.env.GATSBY_HOT_LOADER !== `fast-refresh`) {
@@ -23,14 +14,7 @@ if (process.env.GATSBY_HOT_LOADER !== `fast-refresh`) {
     onError: () => {},
     filename: `/commons.js`
   });
-  overlayPackage.setEditorHandler(errorLocation =>
-    window.fetch(
-      `/__open-stack-frame-in-editor?fileName=` +
-        window.encodeURIComponent(errorLocation.fileName) +
-        `&lineNumber=` +
-        window.encodeURIComponent(errorLocation.lineNumber || 1)
-    )
-  );
+  overlayPackage.setEditorHandler(errorLocation => window.fetch(`/__open-stack-frame-in-editor?fileName=` + window.encodeURIComponent(errorLocation.fileName) + `&lineNumber=` + window.encodeURIComponent(errorLocation.lineNumber || 1)));
 }
 
 const errorMap = {};
@@ -45,23 +29,21 @@ const handleErrorOverlay = () => {
   let errorStringsToDisplay = [];
 
   if (errors.length > 0) {
-    errorStringsToDisplay = flat(errors)
-      .map(error => {
-        if (typeof error === `string`) {
-          return error;
-        } else if (typeof error === `object`) {
-          const errorStrBuilder = [error.text];
+    errorStringsToDisplay = flat(errors).map(error => {
+      if (typeof error === `string`) {
+        return error;
+      } else if (typeof error === `object`) {
+        const errorStrBuilder = [error.text];
 
-          if (error.filePath) {
-            errorStrBuilder.push(`File: ${error.filePath}`);
-          }
-
-          return errorStrBuilder.join(`\n\n`);
+        if (error.filePath) {
+          errorStrBuilder.push(`File: ${error.filePath}`);
         }
 
-        return null;
-      })
-      .filter(Boolean);
+        return errorStrBuilder.join(`\n\n`);
+      }
+
+      return null;
+    }).filter(Boolean);
   }
 
   if (errorStringsToDisplay.length > 0) {

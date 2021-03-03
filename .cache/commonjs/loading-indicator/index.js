@@ -45,10 +45,11 @@ class LoadingIndicatorEventHandler extends _react.default.Component {
   }
 
   render() {
-    return /*#__PURE__*/ _react.default.createElement(_indicator.Indicator, {
+    return /*#__PURE__*/_react.default.createElement(_indicator.Indicator, {
       visible: this.state.visible
     });
   }
+
 }
 
 exports.LoadingIndicatorEventHandler = LoadingIndicatorEventHandler;

@@ -9,16 +9,12 @@ var _react = _interopRequireDefault(require("react"));
 
 function css(strings, ...keys) {
   const lastIndex = strings.length - 1;
-  return (
-    strings.slice(0, lastIndex).reduce((p, s, i) => p + s + keys[i], ``) +
-    strings[lastIndex]
-  );
+  return strings.slice(0, lastIndex).reduce((p, s, i) => p + s + keys[i], ``) + strings[lastIndex];
 }
 
-const Style = () =>
-  /*#__PURE__*/ _react.default.createElement("style", {
-    dangerouslySetInnerHTML: {
-      __html: css`
+const Style = () => /*#__PURE__*/_react.default.createElement("style", {
+  dangerouslySetInnerHTML: {
+    __html: css`
         :host {
           --gatsby: #663399;
           --gatsbyLight: #9158ca;
@@ -170,8 +166,8 @@ const Style = () =>
           font-weight: 600;
         }
       `
-    }
-  });
+  }
+});
 
 var _default = Style;
 exports.default = _default;

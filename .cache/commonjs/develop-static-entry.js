@@ -39,13 +39,11 @@ try {
 Html = Html && Html.__esModule ? Html.default : Html;
 
 var _default = (pagePath, callback) => {
-  let headComponents = [
-    /*#__PURE__*/ _react.default.createElement("meta", {
-      key: "environment",
-      name: "note",
-      content: "environment=development"
-    })
-  ];
+  let headComponents = [/*#__PURE__*/_react.default.createElement("meta", {
+    key: "environment",
+    name: "note",
+    content: "environment=development"
+  })];
   let htmlAttributes = {};
   let bodyAttributes = {};
   let preBodyComponents = [];
@@ -114,29 +112,23 @@ var _default = (pagePath, callback) => {
     pathname: pagePath
   });
 
-  const htmlElement = /*#__PURE__*/ _react.default.createElement(Html, {
-    ...bodyProps,
+  const htmlElement = /*#__PURE__*/_react.default.createElement(Html, { ...bodyProps,
     body: ``,
-    headComponents: headComponents.concat([
-      /*#__PURE__*/ _react.default.createElement("script", {
-        key: `io`,
-        src: "/socket.io/socket.io.js"
-      })
-    ]),
+    headComponents: headComponents.concat([/*#__PURE__*/_react.default.createElement("script", {
+      key: `io`,
+      src: "/socket.io/socket.io.js"
+    })]),
     htmlAttributes,
     bodyAttributes,
     preBodyComponents,
-    postBodyComponents: postBodyComponents.concat([
-      /*#__PURE__*/ _react.default.createElement("script", {
-        key: `polyfill`,
-        src: "/polyfill.js",
-        noModule: true
-      }),
-      /*#__PURE__*/ _react.default.createElement("script", {
-        key: `commons`,
-        src: "/commons.js"
-      })
-    ])
+    postBodyComponents: postBodyComponents.concat([/*#__PURE__*/_react.default.createElement("script", {
+      key: `polyfill`,
+      src: "/polyfill.js",
+      noModule: true
+    }), /*#__PURE__*/_react.default.createElement("script", {
+      key: `commons`,
+      src: "/commons.js"
+    })])
   });
 
   htmlStr = (0, _server.renderToStaticMarkup)(htmlElement);

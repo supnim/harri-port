@@ -1,57 +1,42 @@
-import React from "react";
-import { graphql, StaticQuery } from "gatsby";
-import SEO from "../components/seo";
-import "../utils/css/screen.css";
-import Layout from "../components/layout";
-import VideoBox from "../components/videoBox";
-import path from "../components/videoPaths.js";
-
-// import ToolTip from "../components/toolTip"
+import React from "react"
+import { graphql, StaticQuery } from "gatsby"
+import SEO from "../components/seo"
+import "../utils/css/screen.css"
+import Layout from "../components/layout"
+import VideoBox from "../components/videoBox"
+import path from "../components/videoPaths.js"
 
 const Video = ({ data }) => {
-  const siteTitle = data.site.siteMetadata.title;
-  const videoUrl = path.map(video => (
-    <VideoBox
-      style={{
-        backgroundColor: "whitesmoke",
-        border: "8px solid black",
-        boxShadow: "inset 0px 0px 0px 16px black",
-        boxSizing: "border-box"
-      }}
-      description={video.description}
-      url={video.url}
-      id={video.id}
-    />
-  ));
-  return (
-    <div className="video-page">
-      <Layout title={siteTitle}>
-        <SEO
-          title="videography"
-          keywords={[`videography`, `film`, `director`, `editor`]}
-        />
-        <h3>videography</h3>
-        <p style={{ paddingBottom: "8rem" }}>
-          My second love - showed me the power of good storytelling.
-          <br />
-          Taught me; narration, sound-design, composition, tempo and much more.
-          <br />
-          <br />
-          <div
-            style={{
-              backgroundColor: "#f4f4f4",
-              color: "black",
-              margin: "0 20%",
-              borderRadius: "2px"
-            }}
-          >
-            <p style={{ fontSize: "1.4rem" }}>
-              some of the videos have copyright music and therefore won't play
-              on-site; <br />
-              <b className="">click the title beneath to go to youtube :)</b>
-            </p>
-          </div>
-          {/* <div className="tooltip" style={{ width: "320px", margin: "0 auto" }}>
+	const siteTitle = data.site.siteMetadata.title
+	const videoUrl = path.map((video) => (
+		<VideoBox
+			style={{
+				backgroundColor: "whitesmoke",
+				border: "8px solid black",
+				boxShadow: "inset 0px 0px 0px 16px black",
+				boxSizing: "border-box",
+			}}
+			description={video.description}
+			url={video.url}
+			id={video.id}
+		/>
+	))
+	return (
+		<div className="video-page">
+			<Layout title={siteTitle}>
+				<SEO
+					title="videography"
+					keywords={[`videography`, `film`, `director`, `editor`]}
+				/>
+				<br />
+				<br /> <br /> <br /> <br />
+				<h3>videography</h3>
+				<p style={{ paddingBottom: "8rem" }}>
+					My second love - showed me the power of good storytelling.
+					<br />
+					Taught me; narration, sound-design, composition, tempo and much more.
+					<br />
+					{/* <div className="tooltip" style={{ width: "320px", margin: "0 auto" }}>
 						<ToolTip toolTipText="some of the videos have copyright music and therefore won't play on-site; click the title beneath to go to youtube :)">
 							<svg
 								width="20"
@@ -73,26 +58,28 @@ const Video = ({ data }) => {
 							</svg>
 						</ToolTip>
 					</div> */}
-        </p>
-        <div style={{ maxWidth: "800px", margin: "0 auto" }}>{videoUrl}</div>
-      </Layout>
-    </div>
-  );
-};
+				</p>
+				<div style={{ maxWidth: "800px", margin: "0 auto" }}>{videoUrl}</div>
+			</Layout>
+		</div>
+	)
+}
 
 const indexQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`;
+	query {
+		site {
+			siteMetadata {
+				title
+			}
+		}
+	}
+`
 
-export default props => (
-  <StaticQuery
-    query={indexQuery}
-    render={data => <Video location={props.location} data={data} {...props} />}
-  />
-);
+export default (props) => (
+	<StaticQuery
+		query={indexQuery}
+		render={(data) => (
+			<Video location={props.location} data={data} {...props} />
+		)}
+	/>
+)

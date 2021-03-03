@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 export default function Overlay({ header, body, dismiss }) {
   return (
@@ -39,5 +39,5 @@ export default function Overlay({ header, body, dismiss }) {
         <div data-gatsby-overlay="body">{body}</div>
       </div>
     </>
-  );
+  )
 }

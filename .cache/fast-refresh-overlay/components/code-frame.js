@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const CodeFrame = ({ decoded }) => (
   <pre data-gatsby-overlay="pre">
@@ -14,7 +14,7 @@ const CodeFrame = ({ decoded }) => (
                   ? { fontWeight: 800 }
                   : entry.decoration === `italic`
                   ? { fontStyle: `italic` }
-                  : undefined)
+                  : undefined),
               }}
             >
               {entry.content}
@@ -23,6 +23,6 @@ const CodeFrame = ({ decoded }) => (
         : null}
     </code>
   </pre>
-);
+)
 
-export default CodeFrame;
+export default CodeFrame

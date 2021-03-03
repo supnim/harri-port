@@ -46,7 +46,10 @@ const useFetch = url => {
       const res = await fetch(url);
       const json = await res.json();
       const decoded = (0, _utils.prettifyStack)(json.codeFrame);
-      const { sourcePosition, sourceContent } = json;
+      const {
+        sourcePosition,
+        sourceContent
+      } = json;
       setResponse({
         decoded,
         sourceContent,
@@ -79,7 +82,11 @@ function getCodeFrameInformation(stackTrace) {
   };
 }
 
-const RuntimeError = ({ error, open, dismiss }) => {
+const RuntimeError = ({
+  error,
+  open,
+  dismiss
+}) => {
   const stacktrace = _stackTrace.default.parse(error.error);
 
   const {
@@ -88,70 +95,26 @@ const RuntimeError = ({ error, open, dismiss }) => {
     columnNumber,
     functionName
   } = getCodeFrameInformation(stacktrace);
-  const res = useFetch(
-    `/__original-stack-frame?moduleId=` +
-      window.encodeURIComponent(moduleId) +
-      `&lineNumber=` +
-      window.encodeURIComponent(lineNumber) +
-      `&columnNumber=` +
-      window.encodeURIComponent(columnNumber)
-  );
+  const res = useFetch(`/__original-stack-frame?moduleId=` + window.encodeURIComponent(moduleId) + `&lineNumber=` + window.encodeURIComponent(lineNumber) + `&columnNumber=` + window.encodeURIComponent(columnNumber));
 
-  const header = /*#__PURE__*/ _react.default.createElement(
-    _react.default.Fragment,
-    null,
-    /*#__PURE__*/ _react.default.createElement(
-      "div",
-      {
-        "data-gatsby-overlay": "header__cause-file"
-      },
-      /*#__PURE__*/ _react.default.createElement(
-        "p",
-        null,
-        "Unhandled Runtime Error"
-      ),
-      /*#__PURE__*/ _react.default.createElement("span", null, moduleId)
-    ),
-    /*#__PURE__*/ _react.default.createElement(
-      "button",
-      {
-        onClick: () => open(moduleId, res.sourcePosition.line),
-        "data-gatsby-overlay": "header__open-in-editor"
-      },
-      "Open in editor"
-    )
-  );
+  const header = /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
+    "data-gatsby-overlay": "header__cause-file"
+  }, /*#__PURE__*/_react.default.createElement("p", null, "Unhandled Runtime Error"), /*#__PURE__*/_react.default.createElement("span", null, moduleId)), /*#__PURE__*/_react.default.createElement("button", {
+    onClick: () => open(moduleId, res.sourcePosition.line),
+    "data-gatsby-overlay": "header__open-in-editor"
+  }, "Open in editor"));
 
-  const body = /*#__PURE__*/ _react.default.createElement(
-    _react.default.Fragment,
-    null,
-    /*#__PURE__*/ _react.default.createElement(
-      "p",
-      {
-        "data-gatsby-overlay": "body__error-message-header"
-      },
-      "Error in function ",
-      /*#__PURE__*/ _react.default.createElement(
-        "span",
-        {
-          "data-font-weight": "bold"
-        },
-        functionName
-      )
-    ),
-    /*#__PURE__*/ _react.default.createElement(
-      "p",
-      {
-        "data-gatsby-overlay": "body__error-message"
-      },
-      error.error.message
-    ),
-    /*#__PURE__*/ _react.default.createElement(_codeFrame.default, {
-      decoded: res.decoded
-    })
-  );
+  const body = /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("p", {
+    "data-gatsby-overlay": "body__error-message-header"
+  }, "Error in function ", /*#__PURE__*/_react.default.createElement("span", {
+    "data-font-weight": "bold"
+  }, functionName)), /*#__PURE__*/_react.default.createElement("p", {
+    "data-gatsby-overlay": "body__error-message"
+  }, error.error.message), /*#__PURE__*/_react.default.createElement(_codeFrame.default, {
+    decoded: res.decoded
+  }));
 
-  return /*#__PURE__*/ _react.default.createElement(_overlay.default, {
+  return /*#__PURE__*/_react.default.createElement(_overlay.default, {
     header: header,
     body: body,
     dismiss: dismiss

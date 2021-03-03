@@ -9,7 +9,9 @@ var React = _interopRequireWildcard(require("react"));
 
 var _reactDom = require("react-dom");
 
-const ShadowPortal = function Portal({ children }) {
+const ShadowPortal = function Portal({
+  children
+}) {
   const mountNode = React.useRef(null);
   const portalNode = React.useRef(null);
   const shadowNode = React.useRef(null);
@@ -28,11 +30,9 @@ const ShadowPortal = function Portal({ children }) {
       }
     };
   }, []);
-  return shadowNode.current
-    ? /*#__PURE__*/ (0, _reactDom.createPortal)(children, shadowNode.current)
-    : /*#__PURE__*/ React.createElement("span", {
-        ref: mountNode
-      });
+  return shadowNode.current ? /*#__PURE__*/(0, _reactDom.createPortal)(children, shadowNode.current) : /*#__PURE__*/React.createElement("span", {
+    ref: mountNode
+  });
 };
 
 var _default = ShadowPortal;

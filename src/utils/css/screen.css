@@ -108,9 +108,9 @@ p {
 .site-foot {
 	margin: 0;
 	text-align: center;
-	color: white;
+	color: black;
 	font-size: 1.4rem;
-	height: 100vh;
+	height: 20vh;
 	background-color: #fef3e8;
 	display: flex;
 	flex-direction: column;
@@ -169,7 +169,7 @@ p {
 	margin: 0 20vw;
 }
 .footer-buttons {
-	padding-top: 16rem;
+	padding-top: 4rem;
 }
 
 /* Site Navigation
@@ -781,8 +781,8 @@ p {
 .audio-page,
 .photo-page {
 	text-align: center;
-	background-color: black;
-	color: white;
+	background-color: #fef3e8;
+	color: black;
 }
 
 .video-page p,
@@ -825,7 +825,7 @@ p {
 	padding: 3.2rem;
 }
 .aboutMe a {
-	color: white;
+	color: black;
 	font-weight: 700;
 }
 .aboutMe a:hover {
@@ -836,7 +836,7 @@ p {
 	font-weight: 800;
 	line-height: 1.2;
 	margin: 0.8em 0 0.4em 0;
-	color: white !important;
+	color: black !important;
 }
 .aboutMePic {
 	height: 100%;
