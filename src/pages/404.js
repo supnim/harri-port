@@ -2,7 +2,6 @@ import React from "react";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Background from "../../content/assets/heros/error.svg";
 
 class NotFoundPage extends React.Component {
   state = {
@@ -60,9 +59,7 @@ class NotFoundPage extends React.Component {
         <SEO title="404: Not Found" />
 
         <div style={style}>
-          <div style={{ position: "relative" }}>
-            <Background width="100vw" height="100vh" />
-          </div>
+          <div style={{ position: "relative" }}></div>
           <div style={{ position: "absolute" }}>
             {this.state.show && <Pop />}
           </div>
