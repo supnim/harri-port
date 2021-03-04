@@ -45,15 +45,6 @@ const Layout = (props) => {
 					<div className="site-head-right" role="menu">
 						<ul className="nav" aria-label="menu">
 							<li>
-								<Link to={`/`}>art</Link>
-							</li>
-							<li>
-								<Link to={`/video`}>video</Link>
-							</li>
-							<li>
-								<Link to={`/words`}>words</Link>
-							</li>
-							<li>
 								<Link to={`/contact`}>contact</Link>
 							</li>
 						</ul>

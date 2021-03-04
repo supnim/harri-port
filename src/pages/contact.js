@@ -67,14 +67,15 @@ const Contact = () => {
 					keywords={[`product`, `designer`, `london`, `nimesh`]}
 				/>
 
-				<article className="page-template">
+				<article className="hub-template">
+					<header
+						style={{
+							padding: "8rem 4rem 2rem 4rem",
+						}}
+					>
+						<h1>/contact</h1>
+					</header>
 					<div className="post-content-body row contact">
-						<div className="contactImg col-6">
-							{/* <Img
-								className="aboutMePic"
-								fluid={image.profilePic.childImageSharp.fluid}
-							/> */}
-						</div>
 						<div className="aboutMe col-6">
 							<h3 className="aboutMeTitle">hi, i am nimesh</h3>
 							<p>
@@ -117,16 +118,13 @@ const Contact = () => {
 								on <a href="https://www.linkedin.com/in/nimeshnr">linkedin.</a>{" "}
 							</p>
 						</div>
+						<div className="contactImg col-6">
+							{/* <Img
+								className="aboutMePic"
+								fluid={image.profilePic.childImageSharp.fluid}
+							/> */}
+						</div>
 					</div>
-				</article>
-				<article
-					style={{
-						alignItems: "center",
-						textAlign: "center",
-						padding: "0 4rem",
-					}}
-				>
-					<h6>art</h6>
 				</article>
 			</Layout>
 		</div>

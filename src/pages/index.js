@@ -40,26 +40,49 @@ const Index = ({ data }, location) => {
 						width: "100%",
 						height: "100%",
 						justifyContent: "space-between",
+						textAlign: "right",
+						padding: "4rem",
 					}}
 				>
 					<div>
-						<h1 className="page-head-title">Harriet</h1>
-						<h2 className="page-head-sub">Product Manager</h2>
+						<h1 className="page-head-title">Harriet New</h1>
 					</div>
-					<div style={{ paddingRight: "2rem" }}>
-						<p
-							className="page-head-sub"
+					<div>
+						<Link
+							to="/"
 							style={{
-								fontSize: "2rem",
-								margin: "0",
+								fontSize: "2.4rem",
 							}}
 						>
-							About me
-						</p>
-						<p>
-							background in tech, currently in product management and my hearts
-							in art. click around and see whats what.
-						</p>
+							research/
+						</Link>
+						<br />
+						<Link
+							to="/"
+							style={{
+								fontSize: "2.4rem",
+							}}
+						>
+							product/
+						</Link>
+						<br />
+						<Link
+							to="/writing"
+							style={{
+								fontSize: "2.4rem",
+							}}
+						>
+							writing/
+						</Link>
+						<br />
+						<Link
+							to="/art"
+							style={{
+								fontSize: "2.4rem",
+							}}
+						>
+							art/
+						</Link>
 					</div>
 				</div>
 				<div

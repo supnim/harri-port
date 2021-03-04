@@ -22,7 +22,7 @@ production stylesheet in assets/built/screen.css using gulp dev
 /* Main - Theme styles
  ---------------------------------------------------------- */
 body {
-	font-family: "Lato", "Open Sans", sans-serif;
+	font-family: Georgia, "Times New Roman", Times, serif;
 	background: var(--color-bg);
 	transition: background 0.3s ease-out;
 	transition-delay: 0.25;
@@ -206,6 +206,8 @@ p {
 	margin: 0 0 0 32px;
 	padding: 0;
 	list-style: none;
+	font-size: 2rem;
+	font-weight: bold;
 }
 
 .site-head li {
@@ -416,8 +418,9 @@ p {
 		transition: transform 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99),
 			opacity 0.9s cubic-bezier(0.4, 0.01, 0.165, 0.99);
 		transform: scale(1) translateY(0px);
-		font-weight: 400;
-		color: white;
+		font-weight: 800;
+		color: black;
+		font-size: 3rem;
 		/* theme color var */
 	}
 	.site-head-open .nav-current a {
@@ -778,9 +781,9 @@ p {
 /* ---------------------------------------------------------- */
 
 .video-page,
-.audio-page,
+.hub-page,
 .photo-page {
-	text-align: center;
+	text-align: left;
 	background-color: #fef3e8;
 	color: black;
 }
