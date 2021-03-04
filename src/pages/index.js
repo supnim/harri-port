@@ -51,7 +51,7 @@ const Index = ({ data }, location) => {
 						<Link
 							to="/"
 							style={{
-								fontSize: "2.4rem",
+								fontSize: "3rem",
 							}}
 						>
 							research/
@@ -60,7 +60,7 @@ const Index = ({ data }, location) => {
 						<Link
 							to="/"
 							style={{
-								fontSize: "2.4rem",
+								fontSize: "3rem",
 							}}
 						>
 							product/
@@ -69,7 +69,7 @@ const Index = ({ data }, location) => {
 						<Link
 							to="/writing"
 							style={{
-								fontSize: "2.4rem",
+								fontSize: "3rem",
 							}}
 						>
 							writing/
@@ -78,7 +78,7 @@ const Index = ({ data }, location) => {
 						<Link
 							to="/art"
 							style={{
-								fontSize: "2.4rem",
+								fontSize: "3rem",
 							}}
 						>
 							art/
@@ -94,7 +94,7 @@ const Index = ({ data }, location) => {
 				></div>
 			</header>
 
-			<section>
+			{/* <section>
 				<div className="post-feed">
 					{posts.map(({ node }) => {
 						postCounter++
@@ -108,7 +108,7 @@ const Index = ({ data }, location) => {
 						)
 					})}
 				</div>
-			</section>
+			</section> */}
 		</Layout>
 	)
 }
