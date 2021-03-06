@@ -6,7 +6,7 @@ import "../utils/css/screen.css"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Link } from "gatsby"
-import "../utils/css/components/theme.scss"
+import "../utils/css/components/theme.css"
 import PostCard from "../components/postCard" // article card
 
 const Index = ({ data }, location) => {

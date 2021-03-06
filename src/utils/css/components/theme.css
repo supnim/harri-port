@@ -1,4 +1,4 @@
-// Base styling
+/* Base styling */
 
 .page-head {
 	display: flex;
@@ -10,11 +10,6 @@
 	text-align: left;
 	height: 70vh;
 	background-color: #fef3e8;
-}
-@media screen and (max-width: 600px) {
-	body {
-		background-color: olive impo !important;
-	}
 }
 
 .page-head-title {
@@ -33,7 +28,7 @@
 	color: black;
 }
 
-// Jobs section ----------------------------------------------->
+/* job section */
 .page-wrapper {
 	height: auto;
 	width: 100vw;
@@ -43,16 +38,7 @@
 	}
 }
 
-//logobox
-
-.logobox {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	div {
-		margin: 2rem;
-	}
-}
+/* logobox */
 
 .iframeloading {
 	background-color: whitesmoke;
