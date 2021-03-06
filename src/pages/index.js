@@ -1,19 +1,14 @@
-// Base
 import React from "react"
 import { graphql, StaticQuery } from "gatsby"
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
 
-// Skelton
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import PostCard from "../components/postCard" // article card
 import { Link } from "gatsby"
-
-// Component + theme
 import "../utils/css/components/theme.scss"
+import PostCard from "../components/postCard" // article card
 
-//TODO: switch to staticQuery, get rid of comments, remove unnecessary components, export as draft template
 const Index = ({ data }, location) => {
 	const siteTitle = data.site.siteMetadata.title
 
@@ -45,7 +40,7 @@ const Index = ({ data }, location) => {
 					}}
 				>
 					<div>
-						<h1 className="page-head-title">Harriet New</h1>
+						<h1 className="page-head-title">Harriet F. New</h1>
 					</div>
 					<div>
 						<Link
@@ -94,7 +89,7 @@ const Index = ({ data }, location) => {
 				></div>
 			</header>
 
-			{/* <section>
+			<section>
 				<div className="post-feed">
 					{posts.map(({ node }) => {
 						postCounter++
@@ -108,7 +103,7 @@ const Index = ({ data }, location) => {
 						)
 					})}
 				</div>
-			</section> */}
+			</section>
 		</Layout>
 	)
 }

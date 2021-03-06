@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import Logo from "../../content/assets/supnimLogo.svg"
-import scrollTo from "gatsby-plugin-smoothscroll"
+import Logo from "../../content/assets/logo.svg"
 import useSound from "use-sound"
 import Switch from "../../content/assets/sounds/switch.mp3"
 import Pop from "../../content/assets/sounds/pop.mp3"
@@ -74,12 +73,6 @@ const Layout = (props) => {
 							Get in touch
 						</a>
 					</div>
-				</div>
-				<div
-					title="using ReactJS"
-					style={{ color: "black", margin: "2rem", fontSize: "0.8rem" }}
-				>
-					<p>thanks for taking the time to visit, see you soon :) </p>
 				</div>
 			</footer>
 		</div>

@@ -73,10 +73,10 @@ input[type="button"],
 button,
 .button {
 	color: black;
-	background-color: white;
+	background-color: #fef3e8;
 	box-shadow: none;
 	border: solid 1px black;
-	border-radius: 2px;
+	border-radius: 8px;
 }
 
 input[type="submit"]:hover,
@@ -85,10 +85,10 @@ input[type="button"]:hover,
 button:hover,
 .button:hover {
 	text-decoration: none;
-	color: white;
+	color: #fef3e8;
 	background-color: black;
-	border: solid 1px white;
-	border-radius: 2px;
+	border: solid 1px #fef3e8;
+	border-radius: 8px;
 	opacity: 1 !important;
 }
 
@@ -97,11 +97,11 @@ input[type="reset"].primary,
 input[type="button"].primary,
 button.primary,
 .button.primary {
-	color: white;
+	color: #fef3e8;
 	background-color: black;
 	box-shadow: none;
-	border: solid 1px white;
-	border-radius: 2px;
+	border: solid 1px #fef3e8;
+	border-radius: 8px;
 }
 
 input[type="submit"].primary:hover,
@@ -110,7 +110,7 @@ input[type="button"].primary:hover,
 button.primary:hover,
 .button.primary:hover {
 	color: black;
-	background-color: white;
+	background-color: #fef3e8;
 	border: solid 1px black;
-	border-radius: 2px;
+	border-radius: 8px;
 }

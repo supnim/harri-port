@@ -22,10 +22,11 @@ production stylesheet in assets/built/screen.css using gulp dev
 /* Main - Theme styles
  ---------------------------------------------------------- */
 body {
-	font-family: Georgia, "Times New Roman", Times, serif;
+	font-family: "Lora", Georgia, serif;
 	background: var(--color-bg);
 	transition: background 0.3s ease-out;
 	transition-delay: 0.25;
+	background-color: #fef3e8;
 }
 
 p {
@@ -566,19 +567,19 @@ p {
 .post-content {
 	max-width: 720px;
 	margin: 0 auto;
-	padding: 0 0 3vw 0;
+	padding: 3vw;
 }
 
 .post-content-header {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: left;
 }
 
 .post-content-title {
 	margin: 0 0 3vw;
 	color: var(--color-base);
-	text-align: center;
+	text-align: left;
 }
 
 .post-content-excerpt {
@@ -586,7 +587,7 @@ p {
 	font-size: 2.2rem;
 	line-height: 1.6em;
 	color: var(--color-base);
-	text-align: center;
+	text-align: left;
 	opacity: 0.5;
 }
 @media (max-width: 500px) {

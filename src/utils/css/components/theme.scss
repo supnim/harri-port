@@ -11,6 +11,11 @@
 	height: 70vh;
 	background-color: #fef3e8;
 }
+@media screen and (max-width: 600px) {
+	body {
+		background-color: olive impo !important;
+	}
+}
 
 .page-head-title {
 	font-size: 7rem;
